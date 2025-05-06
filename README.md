@@ -32,6 +32,7 @@ Simply use the shortcode `[custom_featured_image_url]` wherever you want to disp
 - **Vanhoyte**
 - Website: [vanhoyte.com](https://vanhoyte.com)
 - Plugin Page: [Custom Feature Image Token](https://vanhoyte.com/plugins/custom-feature-image-token/)
+- GitHub: [Custom-Post-Type-Feature-Image-Token](https://github.com/mrvanhoyte/Custom-Post-Type-Feature-Image-Token)
 
 ## License
 
