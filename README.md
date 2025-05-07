@@ -26,6 +26,7 @@ Simply use the shortcode `[custom_featured_image_url]` wherever you want to disp
 
 - WordPress 5.0 or higher
 - PHP 7.2 or higher
+- Dynamic OO0
 
 ## Author
 
