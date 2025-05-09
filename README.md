@@ -1,10 +1,14 @@
 # Custom Feature Image Token
 
-A simple WordPress plugin that provides a shortcode to display the current post's featured image URL.
+A simple WordPress plugin that provides two shortcodes:
+- `[custom_featured_image_url]` to display the current post's featured image URL.
+- `[acf_version_link]` to display a link from the ACF 'version' field (if set for the post).
 
 ## Description
 
-Custom Feature Image Token adds a shortcode that returns the URL of the current post's featured image. This is particularly useful when you need to dynamically reference the featured image URL in various contexts within your WordPress site.
+Custom Feature Image Token adds two shortcodes:
+- `[custom_featured_image_url]` returns the URL of the current post's featured image. This is particularly useful when you need to dynamically reference the featured image URL in various contexts within your WordPress site.
+- `[acf_version_link]` returns the value of the Advanced Custom Fields (ACF) field named 'version' as a URL. If the field is not set, it returns a fallback '#'.
 
 ## Installation
 
@@ -14,12 +18,24 @@ Custom Feature Image Token adds a shortcode that returns the URL of the current 
 
 ## Usage
 
-Simply use the shortcode `[custom_featured_image_url]` wherever you want to display the current post's featured image URL.
+### Featured Image URL
 
-### Example
+Use the shortcode `[custom_featured_image_url]` wherever you want to display the current post's featured image URL.
+
+#### Example
 
 ```php
 <img src="[custom_featured_image_url]" alt="Featured Image">
+```
+
+### ACF Version Link
+
+Use the shortcode `[acf_version_link]` to output the value of the ACF field 'version' as a URL. This is useful for linking to a versioned resource or documentation if you use ACF to store such links.
+
+#### Example
+
+```php
+<a href="[acf_version_link]">View Version</a>
 ```
 
 ## Requirements
@@ -43,4 +59,5 @@ This plugin is licensed under the GPL v2 or later.
 
 ### 1.0
 - Initial release
-- Added shortcode `[custom_featured_image_url]` 
+- Added shortcode `[custom_featured_image_url]`
+- Added shortcode `[acf_version_link]` for outputting the ACF 'version' field as a link 

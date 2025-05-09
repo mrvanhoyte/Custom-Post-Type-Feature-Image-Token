@@ -25,3 +25,14 @@ if (!defined('WPINC')) {
 add_shortcode('custom_featured_image_url', function() {
     return get_the_post_thumbnail_url();
 });
+
+function get_acf_version_link() {
+    if (is_singular()) {
+        $link = get_field('version'); // ACF field name
+        if ($link) {
+            return esc_url($link);
+        }
+    }
+    return '#'; // fallback link
+}
+add_shortcode('acf_version_link', 'get_acf_version_link');
